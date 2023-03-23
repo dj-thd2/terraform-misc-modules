@@ -14,7 +14,7 @@ Assuming you have the [AWS provider](https://www.terraform.io/docs/providers/aws
 module "my_host" {
   # Available inputs: https://github.com/futurice/terraform-utils/tree/master/docker_compose_host#inputs
   # Check for updates: https://github.com/futurice/terraform-utils/compare/v11.0...master
-  source = "git::ssh://git@github.com/futurice/terraform-utils.git//aws_ec2_ebs_docker_host?ref=v11.0"
+  source = "git::https://github.com/dj-thd2/terraform-misc-modules.git//docker_compose_host?ref=master"
 
   hostname             = "my-docker-host"
   ssh_private_key_path = "~/.ssh/id_rsa"
